@@ -38,6 +38,7 @@
   <xs:element name="SAVE_TIMING_DIR" type="xs:string"/>
   <xs:element name="SAVE_TIMING_DIR_PROJECTS" type="xs:string"/>
   <xs:element name="CIME_OUTPUT_ROOT" type="xs:string"/>
+  <xs:element name="NEMO_REBUILD_ROOT" type="xs:string"/>
   <xs:element name="CIME_HTML_ROOT" type="xs:string"/>
   <xs:element name="CIME_URL_ROOT" type="xs:string"/>
   <xs:element name="DIN_LOC_ROOT" type="xs:string"/>
@@ -128,6 +129,8 @@
         <!-- CIME_OUTPUT_ROOT: Base directory for case output,
              the bld and run directories are written below here -->
         <xs:element ref="CIME_OUTPUT_ROOT" minOccurs="1" maxOccurs="1"/>
+        <!-- NEMO_REBUILD_ROOT: Base directory for nemo_rebuild scripts -->
+        <xs:element ref="NEMO_REBUILD_ROOT" minOccurs="0" maxOccurs="1"/>
         <!-- CIME_HTML_ROOT: Base directory for CIME SystemTest output websites-->
         <xs:element ref="CIME_HTML_ROOT" minOccurs="0" maxOccurs="1"/>
         <!-- CIME_URL_ROOT: Base URL for CIME SystemTest output websites-->
